@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         // loop over the time blocks
         $(".time-block").each(function () {
-            var blockTime = parseInt($(this).att("id").split("hour")[1]);
+            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
             if(blockTime < timeNow) {
                 $(this).removeClass("future");
